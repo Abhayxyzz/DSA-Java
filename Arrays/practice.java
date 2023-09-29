@@ -16,12 +16,22 @@ public class practice {
         // System.out.println(arr[2]);
 
         // Array of objects
-        String[] str = new String[5];
-        for(int i = 0; i < str.length; i++) {
-            str[i] = in.next();
-        }
+        // String[] str = new String[5];
+        // for(int i = 0; i < str.length; i++) {
+        //     str[i] = in.next();
+        // }
         
-        System.out.println(Arrays.toString(str));
+        // System.out.println(Arrays.toString(str));
+
+        // Passing in functions
+        int[] nums = {1,2,6,9};
+        System.out.println(Arrays.toString(nums));
+        change(nums);
+        System.out.println(Arrays.toString(nums));
 
     }
-}
+    static void change(int[] arr){
+        arr[0] = 99;
+    }
+
+    }
